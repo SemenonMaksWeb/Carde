@@ -1,0 +1,64 @@
+=row()
+    margin-left: -1 * $offset
+    margin-right: -1 * $offset
+    display: flex
+    flex-wrap: wrap
+=row-no-gutters()
+    display: flex
+    flex-wrap: wrap
+
+=col()
+    padding-left: $offset
+    padding-right: $offset
+=col-sm($offset_my)
+    +sm-block
+        padding-left: $offset_my
+        padding-right: $offset_my
+=col-xs($offset_my)
+    +xs-block
+        padding-left: $offset_my
+        padding-right: $offset_my
+=col-md($offset_my)
+    +md-block
+        padding-left: $offset_my
+        padding-right: $offset_my
+=col-lg($offset_my)
+    +lg-block
+        padding-left: $offset_my
+        padding-right: $offset_my
+
+=size($n, $offset_my:$offset)
+    $val: 100% / $columns * $n
+    width: #{calc(#{$val} - #{$offset_my})}
+=size-xs($n, $offset_my:$offset)
+    $val: 100% / $columns * $n
+    +xs(width, #{calc(#{$val} - #{$offset_my})})     
+=size-md($n, $offset_my:$offset)
+    $val: 100% / $columns * $n
+    +md(width, #{calc(#{$val} - #{$offset_my})})     
+=size-sm($n, $offset_my:$offset)
+    $val: 100% / $columns * $n
+    +sm(width, #{calc(#{$val} - #{$offset_my})})     
+=size-lg($n, $offset_my:$offset)
+    $val: 100% / $columns * $n
+    +lg(width, #{calc(#{$val} - #{$offset_my})}) 
+
+=size-auto()
+    width: auto
+    max-width: 100%
+=size-auto-sm()
+    +sm-block
+        width: auto
+        max-width: 100%
+=size-auto-xs()
+    +xs-block
+        width: auto
+        max-width: 100%
+=size-auto-md()
+    +md-block
+        width: auto
+        max-width: 100%
+=size-auto-lg()
+    +lg-block
+        width: auto
+        max-width: 100%

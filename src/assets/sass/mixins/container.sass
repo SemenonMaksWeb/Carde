@@ -1,0 +1,34 @@
+=container()
+    max-width: $container-width
+    padding-left: $offset
+    padding-right: $offset
+    margin-left: auto
+    margin-right: auto
+=container-sm($width:false, $padding:false)
+    +sm-block
+        @if $padding != false
+            padding-left: $padding
+            padding-right: $padding
+        @if $width != false
+            max-width: $width
+=container-lg($width:false, $padding:false)
+    +lg-block
+        @if $padding != false
+            padding-left: $padding
+            padding-right: $padding
+        @if $width != false
+            max-width: $width
+=container-md($width:false, $padding:false)
+    +md-block
+        @if $padding != false
+            padding-left: $padding
+            padding-right: $padding
+        @if $width != false
+            max-width: $width
+=container-xs($width:false, $padding:false)
+    +xs-block
+        @if $padding != false
+            padding-left: $padding
+            padding-right: $padding
+        @if $width != false
+            max-width: $width
