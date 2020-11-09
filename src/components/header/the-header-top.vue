@@ -44,14 +44,17 @@
 .header-nav-top // .header-nav-top
     font-family: var(--ff-link)
     +row-no-gutters()
-    +mt-md-em(30px)
-    +size-md(12)
+    +size-lg(9)
+    +size(12)
+    +flex-column()
+    +flex-md-row()
+    +justify-md-content-between()
+    +mt-rem(30px)
     .header-contact-blog // .header-contact-blog
         +row-no-gutters()
-        +flex-xs-column()
-        +size-sm(12)
+        +mx-rem(-15px)
     .nav-top-blog //nav-top-blog
-        +my-sm-rem(5px)
+        +my-rem(5px)
         +mx-rem(15px)
     .nav-top-item //nav-top-item
         color: #fff
@@ -69,18 +72,20 @@
     .nav-row-icons //nav-row-icons
         +d-flex()
         +align-items-center()
-        +mt-sm-rem(15px)
+        +ml-rem(-20px)
+        +ml-md-rem(0px)
+        +mt-rem(15px)
     .nav-top-icons //nav-top-icons
         width: 30px
         height: 30px
-        +mx-rem(10px)
+        +ml-rem(20px)
         +px-rem(7px)
         +py-rem(7px)
         border: 1px solid #fff
         border-radius: 360px
         transition: all 0.5s
         cursor: pointer
-        &:hover
+        &:hover, .activ
             background-color: var(--color-red)
             border: 0
 </style>
