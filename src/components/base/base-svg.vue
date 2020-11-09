@@ -1,13 +1,21 @@
 <template>
-    $END$
+    <object type="image/svg+xml" :data="data" />
 </template>
 
 <script>
     export default {
-        name: "base-svg"
+        name: "base-svg",
+        props:{
+            data:{
+                type: String,
+                request: true,
+            }
+        }
     }
 </script>
 
-<style scoped>
-
+<style lang="sass">
+object
+    width: 100%
+    height: auto
 </style>

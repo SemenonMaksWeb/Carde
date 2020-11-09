@@ -1,6 +1,9 @@
 :root{
     --header-bg: #1d1d1d;
     --ff-logo: Raleway;
+    --ff-link: OpenSans;
     --color-red: #ef5050;
     --text-description: #8a8a8a;
+    --text-nav-top: #727272;
 }
+
