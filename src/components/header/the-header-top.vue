@@ -32,8 +32,8 @@
     </nav>
 </template>
 
-<script>
-    import BaseSvg from "@/components/base/base-svg";
+<script lang="ts">
+    import BaseSvg from "@/components/base/base-svg.vue";
     export default {
         name: "the-header-top",
         components: {BaseSvg}

@@ -2,7 +2,7 @@
     <object type="image/svg+xml" :data="data" />
 </template>
 
-<script>
+<script lang="ts">
     export default {
         name: "base-svg",
         props:{

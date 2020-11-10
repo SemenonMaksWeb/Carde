@@ -18,8 +18,8 @@
     </section>
 </template>
 
-<script>
-    import BaseContainer from "@/components/base/base-container";
+<script lang="ts">
+    import BaseContainer from "@/components/base/base-container.vue";
     export default {
         name: "the-nav-main",
         components: {BaseContainer}

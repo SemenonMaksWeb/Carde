@@ -10,11 +10,11 @@
     </header>
 </template>
 
-<script>
-    import TheLogo from "./the-logo";
-    import TheHeaderTop from "@/components/header/the-header-top";
-    import TheNavMain from "@/components/header/the-nav-main";
-    import BaseContainer from "@/components/base/base-container";
+<script lang="ts">
+    import TheLogo from "@/components/header/the-logo.vue";
+    import TheHeaderTop from "@/components/header/the-header-top.vue";
+    import TheNavMain from "@/components/header/the-nav-main.vue";
+    import BaseContainer from "@/components/base/base-container.vue";
 
     export default {
         name: "the-header",
