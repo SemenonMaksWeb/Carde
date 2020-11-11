@@ -14,6 +14,8 @@ module.exports = {
         ecmaVersion: 2020
     },
     rules: {
-
+        "vue/valid-template-root": 0, // Правило 1 корневой элемент фикс для vue-3
+        "no-console": "warn", // Без консоли
+        // "eqeqeq": ["warn", "always"], // Не работало
     }
 };

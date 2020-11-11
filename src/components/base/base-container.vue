@@ -1,13 +1,13 @@
 <template>
-    <div class="container">
-        <slot></slot>
-    </div>
+  <div class="container">
+    <slot></slot>
+  </div>
 </template>
 
 <script lang="ts">
-    export default {
-        name: "base-container"
-    }
+export default {
+  name: "base-container"
+};
 </script>
 
 <style lang="sass">

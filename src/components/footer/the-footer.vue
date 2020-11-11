@@ -1,15 +1,13 @@
 <template>
-    <the-footer-brand/>
+  <the-footer-brand />
 </template>
 
 <script lang="ts">
-import  TheFooterBrand from  "@/components/footer/the-footer-brand.vue"
-    export default {
-        name: "the-footer",
-        components: {TheFooterBrand}
-    }
+import TheFooterBrand from "@/components/footer/the-footer-brand.vue";
+export default {
+  name: "the-footer",
+  components: { TheFooterBrand }
+};
 </script>
 
-<style scoped>
-
-</style>
+<style></style>
