@@ -1,43 +1,47 @@
 <template>
-    <nav class="header-nav-top">
-        <div class="header-contact-blog">
-            <div class="nav-top-blog">
-                <h2 class="nav-top-item">EMAIL</h2>
-                <span class="nav-top-description">companymail@sample.com</span>
-            </div>
-            <div class="nav-top-blog">
-                <h2 class="nav-top-item">OPEN HOURS</h2>
-                <span class="nav-top-description">Tues - Sun 9.00 am - 7.00 pm</span>
-            </div>
-            <div class="nav-top-blog">
-                <h2 class="nav-top-description">Call Now</h2>
-                <a class="nav-top-link-tlf" href="">(732) 803-01 03</a>
-            </div>
-        </div>
-        <!--        Иконки -->
-        <div class="nav-row-icons">
-            <div class="nav-top-icons">
-                <base-svg :data="require('@/assets/img/icons/facebook.svg')" />
-            </div>
-            <div class="nav-top-icons">
-                <base-svg :data="require('@/assets/img/icons/google-plus.svg')" />
-            </div>
-            <div class="nav-top-icons">
-                <base-svg :data="require('@/assets/img/icons/pinterest-circular-logo-symbol.svg')" />
-            </div>
-            <div class="nav-top-icons">
-                <base-svg :data="require('@/assets/img/icons/twitter.svg')" />
-            </div>
-        </div>
-    </nav>
+  <nav class="header-nav-top">
+    <div class="header-contact-blog">
+      <div class="nav-top-blog">
+        <h2 class="nav-top-item">EMAIL</h2>
+        <span class="nav-top-description">companymail@sample.com</span>
+      </div>
+      <div class="nav-top-blog">
+        <h2 class="nav-top-item">OPEN HOURS</h2>
+        <span class="nav-top-description">Tues - Sun 9.00 am - 7.00 pm</span>
+      </div>
+      <div class="nav-top-blog">
+        <h2 class="nav-top-description">Call Now</h2>
+        <a class="nav-top-link-tlf" href="">(732) 803-01 03</a>
+      </div>
+    </div>
+    <!--        Иконки -->
+    <div class="nav-row-icons">
+      <div class="nav-top-icons">
+        <base-svg :data="require('@/assets/img/icons/facebook.svg')" />
+      </div>
+      <div class="nav-top-icons">
+        <base-svg :data="require('@/assets/img/icons/google-plus.svg')" />
+      </div>
+      <div class="nav-top-icons">
+        <base-svg
+          :data="
+            require('@/assets/img/icons/pinterest-circular-logo-symbol.svg')
+          "
+        />
+      </div>
+      <div class="nav-top-icons">
+        <base-svg :data="require('@/assets/img/icons/twitter.svg')" />
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script lang="ts">
-    import BaseSvg from "@/components/base/base-svg.vue";
-    export default {
-        name: "the-header-top",
-        components: {BaseSvg}
-    }
+import BaseSvg from "@/components/base/base-svg.vue";
+export default {
+  name: "the-header-top",
+  components: { BaseSvg }
+};
 </script>
 
 <style lang="sass">
@@ -89,4 +93,3 @@
             background-color: var(--color-red)
             border: 0
 </style>
-

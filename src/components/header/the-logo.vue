@@ -1,17 +1,17 @@
 <template>
-    <div class="the-logo">
-        <img class="logo-img" :src="require('@/assets/img/logo.png')"  alt="logo">
-        <div class="logo-content">
-            <div class="logo-name">CAR <span class="logo-name-span">RE</span> </div>
-            <div class="logo-description">Biggest car repair service</div>
-        </div>
+  <div class="the-logo">
+    <img class="logo-img" :src="require('@/assets/img/logo.png')" alt="logo" />
+    <div class="logo-content">
+      <div class="logo-name">CAR <span class="logo-name-span">RE</span></div>
+      <div class="logo-description">Biggest car repair service</div>
     </div>
+  </div>
 </template>
 
 <script lang="ts">
-    export default {
-        name: "the-logo"
-    }
+export default {
+  name: "the-logo"
+};
 </script>
 
 <style lang="sass">
@@ -40,4 +40,3 @@
             +fz-rem(12px)
             font-weight: 500
 </style>
-
