@@ -54,7 +54,7 @@ export default {
     width: 100%
     background-color: var(--color-red)
 .section-footer-brand
-    +row-no-gutters()
+    +row()
     +align-items-center()
     +justify-content-between()
 </style>

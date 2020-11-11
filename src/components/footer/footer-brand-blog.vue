@@ -22,8 +22,7 @@ export default {
 
 <style lang="sass">
 .footer-brand-blog
-    +size(12)
-    +size-lg(3)
+    +col()
     +my-rem(11px)
     +my-lg-rem(0px)
 </style>
