@@ -18,4 +18,6 @@ export default {
 object
     width: 100%
     height: auto
+#icons
+  fill: red
 </style>

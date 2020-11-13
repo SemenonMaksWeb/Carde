@@ -7,9 +7,9 @@
     display: flex
     flex-wrap: wrap
 
-=col()
-    padding-left: $offset
-    padding-right: $offset
+=col($offset_my:$offset)
+    padding-left: $offset_my
+    padding-right: $offset_my
 =col-sm($offset_my)
     +sm-block
         padding-left: $offset_my

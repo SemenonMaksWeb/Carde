@@ -1,9 +1,17 @@
 <template>
   <div class="the-logo">
-    <img class="logo-img" :src="require('@/assets/img/logo.png')" alt="logo" />
+    <img
+      class="logo-img"
+      :src="require('@/assets/img/logo.png')"
+      alt="logo"
+    />
     <div class="logo-content">
-      <div class="logo-name">CAR <span class="logo-name-span">RE</span></div>
-      <div class="logo-description">Biggest car repair service</div>
+      <div class="logo-name">
+        CAR <span class="logo-name-span">RE</span>
+      </div>
+      <div class="logo-description">
+        Biggest car repair service
+      </div>
     </div>
   </div>
 </template>

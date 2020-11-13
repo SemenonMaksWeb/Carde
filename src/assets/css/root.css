@@ -1,10 +1,16 @@
 :root{
-    --header-bg: #1d1d1d;
     --ff-logo: Raleway;
     --ff-link: OpenSans;
+    --ff-title-footer:Poppins;
+    --ff-footer-news:Arvo;
+    --header-bg: #1d1d1d;
     --color-red: #ef5050;
     --text-description: #8a8a8a;
     --text-nav-top: #727272;
+    --text-footer: #bebebe;
     --link-hover:#f95b5b;
+    --bg-footer: #141414;
+    --color-input: #ccc;
+
 }
 
