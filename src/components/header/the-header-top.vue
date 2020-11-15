@@ -3,24 +3,36 @@
     <div class="header-contact-blog">
       <div class="nav-top-blog">
         <h2 class="nav-top-item">EMAIL</h2>
-        <span class="nav-top-description">companymail@sample.com</span>
+        <span class="nav-top-description"
+          >companymail@sample.com</span
+        >
       </div>
       <div class="nav-top-blog">
         <h2 class="nav-top-item">OPEN HOURS</h2>
-        <span class="nav-top-description">Tues - Sun 9.00 am - 7.00 pm</span>
+        <span class="nav-top-description"
+          >Tues - Sun 9.00 am - 7.00 pm</span
+        >
       </div>
       <div class="nav-top-blog">
         <h2 class="nav-top-description">Call Now</h2>
-        <a class="nav-top-link-tlf" href="">(732) 803-01 03</a>
+        <a class="nav-top-link-tlf" href=""
+          >(732) 803-01 03</a
+        >
       </div>
     </div>
     <!--        Иконки -->
     <div class="nav-row-icons">
       <div class="nav-top-icons">
-        <base-svg :data="require('@/assets/img/icons/facebook.svg')" />
+        <base-svg
+          :data="require('@/assets/img/icons/facebook.svg')"
+        />
       </div>
       <div class="nav-top-icons">
-        <base-svg :data="require('@/assets/img/icons/google-plus.svg')" />
+        <base-svg
+          :data="
+            require('@/assets/img/icons/google-plus.svg')
+          "
+        />
       </div>
       <div class="nav-top-icons">
         <base-svg
@@ -30,7 +42,9 @@
         />
       </div>
       <div class="nav-top-icons">
-        <base-svg :data="require('@/assets/img/icons/twitter.svg')" />
+        <base-svg
+          :data="require('@/assets/img/icons/twitter.svg')"
+        />
       </div>
     </div>
   </nav>
@@ -46,10 +60,9 @@ export default {
 
 <style lang="sass">
 .header-nav-top // .header-nav-top
-    font-family: var(--ff-link)
     +row-no-gutters()
-    +size-lg(9)
-    +size(12)
+    +size-off-lg(9)
+    +size-off(12)
     +flex-column()
     +flex-md-row()
     +justify-md-content-between()

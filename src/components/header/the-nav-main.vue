@@ -1,29 +1,71 @@
 <template>
-    <section class="section-nav-main">
-        <base-container class="padding-null">
-            <nav class="nav-main">
-                <div class="nav">
-                    <router-link active-class="active" to="/" class="nav-main-link">HOME</router-link>
-                    <router-link active-class="active" to="/pages" class="nav-main-link">PAGES</router-link>
-                    <router-link active-class="active" to="/about" class="nav-main-link">ABOUT US</router-link>
-                    <router-link active-class="active" to="/service" class="nav-main-link">SERVICE</router-link>
-                    <router-link active-class="active" to="/gallery" class="nav-main-link">Gallery</router-link>
-                    <router-link active-class="active" to="/testimonali" class="nav-main-link">TESTIMONAIL</router-link>
-                    <router-link active-class="active" to="/blog" class="nav-main-link">BLOG</router-link>
-                    <router-link active-class="active" to="/contact" class="nav-main-link">CONTACT US</router-link>
-                </div>
-                <router-link to="" class="nav-main-link">GET FREE QUOTE</router-link>
-            </nav>
-        </base-container>
-    </section>
+  <section class="section-nav-main">
+    <base-container class="padding-null">
+      <nav class="nav-main">
+        <div class="nav">
+          <router-link
+            active-class="active"
+            to="/"
+            class="nav-main-link"
+            >HOME</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/pages"
+            class="nav-main-link"
+            >PAGES</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/about"
+            class="nav-main-link"
+            >ABOUT US</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/service"
+            class="nav-main-link"
+            >SERVICE</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/gallery"
+            class="nav-main-link"
+            >Gallery</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/testimonali"
+            class="nav-main-link"
+            >TESTIMONAIL</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/blog"
+            class="nav-main-link"
+            >BLOG</router-link
+          >
+          <router-link
+            active-class="active"
+            to="/contact"
+            class="nav-main-link"
+            >CONTACT US</router-link
+          >
+        </div>
+        <router-link to="" class="nav-main-link"
+          >GET FREE QUOTE</router-link
+        >
+      </nav>
+    </base-container>
+  </section>
 </template>
 
 <script lang="ts">
-    import BaseContainer from "@/components/base/base-container.vue";
-    export default {
-        name: "the-nav-main",
-        components: {BaseContainer}
-    }
+import BaseContainer from "@/components/base/base-container.vue";
+export default {
+  name: "the-nav-main",
+  components: { BaseContainer }
+};
 </script>
 
 <style lang="sass">
@@ -49,13 +91,12 @@
         +fz-rem(14px)
         +d-block()
         +py-rem(25px)
-        +px-rem(15px)
+        +px-lg-rem(23px)
+        padding-left: 30px
         color: #fff
         background-color: var(--color-red)
         text-decoration: none
         transition: all 0.5s
         &:hover, &.active
             background-color: var(--link-hover)
-
-
 </style>

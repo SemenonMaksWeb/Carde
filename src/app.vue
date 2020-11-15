@@ -1,6 +1,7 @@
 <template>
   <the-header />
-  <main>
+  <!--  <banner></banner>-->
+  <main class="main-index">
     <router-view />
   </main>
   <the-footer></the-footer>
@@ -17,4 +18,4 @@ export default {
   }
 };
 </script>
-<style></style>
+<style lang="sass"></style>

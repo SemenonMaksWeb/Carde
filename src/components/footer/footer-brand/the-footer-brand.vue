@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import FooterBrandBlog from "@/components/footer/footer-brand/footer-brand-blog.vue";
+import FooterBrandBlog from "@/components/footer/footer-brand/footer-brand-block.vue";
 import BaseContainer from "@/components/base/base-container.vue";
 export default {
   data() {

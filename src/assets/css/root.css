@@ -1,6 +1,6 @@
 :root{
     --ff-logo: Raleway;
-    --ff-link: OpenSans;
+    --ff-body: OpenSans;
     --ff-title-footer:Poppins;
     --ff-footer-news:Arvo;
     --header-bg: #1d1d1d;
@@ -11,6 +11,7 @@
     --link-hover:#f95b5b;
     --bg-footer: #141414;
     --color-input: #ccc;
+    --color-meta-data: #a9a9a9;
+    --color-blog-link: #333;
 
 }
-

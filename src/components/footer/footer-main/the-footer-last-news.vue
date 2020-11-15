@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import FooterTitle from "@/components/footer/footer-base/footer-title.vue";
-import FooterNewsBlog from "@/components/footer/footer-news/footer-news-blog.vue";
+import FooterNewsBlog from "@/components/footer/footer-news/footer-news-block.vue";
 export default {
   name: "the-footer-last-news",
   components: { FooterNewsBlog, FooterTitle },

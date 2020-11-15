@@ -28,6 +28,5 @@ export default {
   +mt-rem(30px)
   +lh-rem(25px)
   color: var(--text-footer)
-  font-family: var(--ff-link)
   +fz-rem(13px)
 </style>

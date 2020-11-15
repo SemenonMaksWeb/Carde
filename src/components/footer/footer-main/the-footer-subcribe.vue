@@ -24,7 +24,6 @@ export default {
     +mt-rem(15px)
 .footer-subcribe-text
     color: var(--text-footer)
-    font-family: var(--ff-link)
     +fz-rem(13px)
     +mb-rem(15px)
 .footer-title-subcribe

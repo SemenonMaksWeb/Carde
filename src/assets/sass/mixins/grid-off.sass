@@ -1,0 +1,35 @@
+=size-off($n)
+  $val: 100% / $columns * $n
+  width: $val
+=size-off-xs($n)
+  $val: 100% / $columns * $n
+  +xs(width, $val)
+=size-off-md($n)
+  $val: 100% / $columns * $n
+  +md(width, $val)
+=size-off-sm($n)
+  $val: 100% / $columns * $n
+  +sm(width, $val)
+=size-off-lg($n)
+  $val: 100% / $columns * $n
+  +lg(width, $val )
+
+=size-off-auto()
+  width: auto
+  max-width: 100%
+=size-off-auto-sm()
+  +sm-block
+    width: auto
+    max-width: 100%
+=size-off-auto-xs()
+  +xs-block
+    width: auto
+    max-width: 100%
+=size-off-auto-md()
+  +md-block
+    width: auto
+    max-width: 100%
+=size-off-auto-lg()
+  +lg-block
+    width: auto
+    max-width: 100%

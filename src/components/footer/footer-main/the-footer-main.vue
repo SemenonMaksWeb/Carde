@@ -41,9 +41,9 @@ export default {
     background-color: var(--bg-footer)
 .section-footer-main
   +row()
-  //+flex-column()
   +flex-sm-row()
   +justify-content-between()
+  +mx-px(-15px)
 .footer-blogs
   +col(30px)
   +col-sm(15px)

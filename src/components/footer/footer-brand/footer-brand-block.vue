@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-brand-blog">
+  <div class="footer-brand-block">
     <img :src="src" :alt="alt" class="footer-brand-img" />
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="sass">
-.footer-brand-blog
+.footer-brand-block
     +col()
     +my-rem(11px)
     +my-lg-rem(0px)
