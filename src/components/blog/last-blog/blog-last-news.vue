@@ -1,23 +1,22 @@
 <template>
-  <div class="footer-last-news footer-blogs">
-    <footer-title>Latest News</footer-title>
-    <div class="footer-last-news-blogs">
-      <footer-news-blog
+  <div class="last-news">
+    <slot name="title"> </slot>
+    <div class="last-news-blogs">
+      <blog-news-block
         v-for="dataset in news"
         :key="dataset.id"
         :news="dataset"
       >
-      </footer-news-blog>
+      </blog-news-block>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import FooterTitle from "@/components/footer/footer-base/footer-title.vue";
-import FooterNewsBlog from "@/components/footer/footer-news/footer-news-block.vue";
+import BlogNewsBlock from "@/components/blog/last-blog/blog-news-block.vue";
 export default {
-  name: "the-footer-last-news",
-  components: { FooterNewsBlog, FooterTitle },
+  name: "blog-last-news",
+  components: { BlogNewsBlock },
   data() {
     return {
       news: [
@@ -49,10 +48,8 @@ export default {
 </script>
 
 <style lang="sass">
-.footer-last-news
+.last-news
   +mt-rem(15px)
   +mt-sm-rem(0px)
-  +size-sm(4) // lg
-  +size(12)
   +mb-rem(15px)
 </style>

@@ -21,7 +21,7 @@ export default {
 <style lang="sass">
 .footer-socially
   +size(12)
-  +size-xs(6)
+  +size-xs(7)
   +size-lg(3)
   //+size-md(4)
 .footer-socially-text

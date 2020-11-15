@@ -3,11 +3,15 @@
     <base-container>
       <section class="section-footer-main">
         <the-footer-socially />
-        <the-footer-last-news></the-footer-last-news>
-        <the-footer-links></the-footer-links>
+        <blog-last-news class="footer-blogs footer-last-news">
+          <template #title>
+            <footer-title>Latest News</footer-title>
+          </template>
+        </blog-last-news>
+        <the-footer-links />
         <div>
-          <the-footer-gallery></the-footer-gallery>
-          <the-footer-subcribe></the-footer-subcribe>
+          <the-footer-gallery />
+          <the-footer-subcribe />
         </div>
       </section>
     </base-container>
@@ -17,17 +21,19 @@
 <script lang="ts">
 import TheFooterSocially from "@/components/footer/footer-main/the-footer-socially.vue";
 import BaseContainer from "@/components/base/base-container.vue";
-import TheFooterLastNews from "@/components/footer/footer-main/the-footer-last-news.vue";
 import TheFooterLinks from "@/components/footer/footer-main/the-footer-links.vue";
 import TheFooterGallery from "@/components/footer/footer-main/the-footer-gallery.vue";
 import TheFooterSubcribe from "@/components/footer/footer-main/the-footer-subcribe.vue";
+import FooterTitle from "@/components/footer/footer-base/footer-title.vue";
+import BlogLastNews from '@/components/blog/last-blog/blog-last-news.vue';
 export default {
   name: "the-footer-main",
   components: {
+    BlogLastNews,
+    FooterTitle,
     TheFooterSubcribe,
     TheFooterGallery,
     TheFooterLinks,
-    TheFooterLastNews,
     BaseContainer,
     TheFooterSocially
   }
@@ -47,4 +53,7 @@ export default {
 .footer-blogs
   +col(30px)
   +col-sm(15px)
+.footer-last-news
+  +size-sm(4) // lg
+  +size(12)
 </style>
