@@ -19,4 +19,7 @@ export default {
 <style lang="sass">
 .filter-blog-title
   +mb-rem(32px)
+  +fz-rem(24px)
+  font-weight: 700
+  color: var(--header-bg)
 </style>

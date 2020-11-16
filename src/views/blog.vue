@@ -31,9 +31,13 @@ export default {
 .view-blog
  +row()
 .view-blog__blog-row
-  +size(8)
+  +size(12)
+  +size-sm(8)
   +col()
 .view-blog__filter-blog-form
-  +size-off(4)
+  +mt-rem(50px)
+  +mt-sm-rem(0px)
+  +size-off-sm(4)
+  +size-off(12)
   +pl-px(15px)
 </style>

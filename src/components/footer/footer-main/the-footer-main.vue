@@ -3,7 +3,10 @@
     <base-container>
       <section class="section-footer-main">
         <the-footer-socially />
-        <blog-last-news class="footer-blogs footer-last-news">
+        <blog-last-news
+          :name-components="'blog-last-news'"
+          class="footer-blogs footer-last-news"
+        >
           <template #title>
             <footer-title>Latest News</footer-title>
           </template>
@@ -25,7 +28,7 @@ import TheFooterLinks from "@/components/footer/footer-main/the-footer-links.vue
 import TheFooterGallery from "@/components/footer/footer-main/the-footer-gallery.vue";
 import TheFooterSubcribe from "@/components/footer/footer-main/the-footer-subcribe.vue";
 import FooterTitle from "@/components/footer/footer-base/footer-title.vue";
-import BlogLastNews from '@/components/blog/last-blog/blog-last-news.vue';
+import BlogLastNews from "@/components/blog/last-blog/blog-last-news.vue";
 export default {
   name: "the-footer-main",
   components: {
