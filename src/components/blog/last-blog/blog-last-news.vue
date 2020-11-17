@@ -14,10 +14,11 @@
 </template>
 
 <script lang="ts">
-import BlogNewsBlock from "@/components/blog/last-blog/blog-news-block.vue";
+import BlogNewsBlock from "@/components/blog/last-blog/base/blog-news-block.vue";
+import BlogNewsBlockFilter from "@/components/blog/last-blog/base/blog-news-block-filter.vue";
 export default {
   name: "blog-last-news",
-  components: { BlogNewsBlock },
+  components: { BlogNewsBlockFilter, BlogNewsBlock },
   props: {
     NameComponents: {
       request: true
@@ -29,24 +30,29 @@ export default {
         {
           id: 1,
           src: require("@/assets/img/news/news_id1_1.png"),
-          title: "",
+          title: "title item news blogs",
           text: `Lorem Ipsum is simply dumm
             "text of the and useble`,
-          date: "17 jun, 2015"
+          date: "17 jun, 2015",
+          tag: "Cart"
         },
         {
           id: 2,
           src: require("@/assets/img/news/news_id1_1.png"),
           text: `Lorem Ipsum is simply dumm
             "text of the and useble`,
-          date: "17 jun, 2015"
+          date: "17 jun, 2015",
+          title: "title item news blogs",
+          tag: "Cart"
         },
         {
           id: 3,
           src: require("@/assets/img/news/news_id1_1.png"),
           text: `Lorem Ipsum is simply dumm
             "text of the and useble`,
-          date: "17 jun, 2015"
+          date: "17 jun, 2015",
+          title: "title item news blogs",
+          tag: "Cart"
         }
       ]
     };

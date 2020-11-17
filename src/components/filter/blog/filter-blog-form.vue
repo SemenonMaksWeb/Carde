@@ -1,7 +1,10 @@
 <template>
   <form class="filter-blog-form">
     <filter-blog-input class="filter-form-blog-input" />
-    <blog-last-news class="filter-form-blog-news">
+    <blog-last-news
+      class="filter-form-blog-news"
+      NameComponents="BlogNewsBlockFilter"
+    >
       <template #title>
         <filter-blog-title text="Latest Post" />
       </template>
@@ -100,7 +103,7 @@ export default {
           id: 6,
           text: "Fish",
           to: `/blog/tag/Fish`
-        },
+        }
       ]
     };
   }

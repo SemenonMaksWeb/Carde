@@ -4,7 +4,7 @@
       <section class="section-footer-main">
         <the-footer-socially />
         <blog-last-news
-          :name-components="'blog-last-news'"
+          NameComponents="BlogNewsBlock"
           class="footer-blogs footer-last-news"
         >
           <template #title>
