@@ -10,7 +10,7 @@ export default {
   props: {
     link: {
       type: Object,
-      request: require
+      request: true
     }
   }
 };

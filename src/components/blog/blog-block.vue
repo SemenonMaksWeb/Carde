@@ -25,7 +25,10 @@
     <p class="blog-block-text">
       {{ blog.body }}
     </p>
-    <router-link class="blog-block-link" :to="'/blog/' + blog.id">
+    <router-link
+      class="blog-block-link"
+      :to="'/blog/' + blog.id"
+    >
       Read More
     </router-link>
   </div>
