@@ -17,7 +17,7 @@ import BaseSection from "@/components/base/base-section.vue";
 import BlogRow from "@/components/blog/blog-row.vue";
 import FilterBlogForm from "@/components/filter/blog/filter-blog-form.vue";
 export default {
-  name: "blog.vue",
+  name: "page-blog",
   components: {
     FilterBlogForm,
     BlogRow,
