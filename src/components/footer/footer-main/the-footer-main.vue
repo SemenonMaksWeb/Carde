@@ -49,7 +49,7 @@ export default {
     +py-sm-rem(80px)
     background-color: var(--bg-footer)
 .section-footer-main
-  +row()
+  +row-no-gutters()
   +flex-sm-row()
   +justify-content-between()
   +mx-px(-15px)

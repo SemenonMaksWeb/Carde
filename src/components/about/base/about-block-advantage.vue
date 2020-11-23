@@ -37,7 +37,13 @@ export default {
   fill: #fff
 .about-block-advantage
   +col()
-  +size-off(3)
+  +size-off(12)
+  +size-off-sm(6)
+  +size-off-lg(3)
+  +mb-rem(30px)
+  +mb-lg-rem(0px)
+  &:last-child
+    +mb-rem(0px)
 .about-block-advantage-svg
   max-width: 100px
   +py-rem(15px)
@@ -57,6 +63,9 @@ export default {
 .about-block-advantage-text
   +lh-rem(25px)
   +mb-rem(15px)
+  +size-off(12)
+  +size-off-xs(8)
+  +size-off-lg(12)
 .about-block-advantage-link
   text-decoration: none
   color: var(--color-blog-link)

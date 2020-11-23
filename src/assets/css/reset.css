@@ -24,3 +24,7 @@ textarea {
 li{
     list-style: none;
 }
+body, html{
+    font-family: var(--ff-body)
+}
+

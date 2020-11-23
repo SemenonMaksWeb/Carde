@@ -18,4 +18,7 @@ export default {
   }
 };
 </script>
-<style lang="sass"></style>
+<style lang="sass">
+.main-index
+  height: 100%
+</style>

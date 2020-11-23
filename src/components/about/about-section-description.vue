@@ -101,10 +101,12 @@ export default {
   +justify-content-between()
 .about-col-video
   +col()
-  +size(5)
+  +size-lg(5)
+  +size(12)
 .about-col
   +col()
-  +size(7)
+  +size-lg(7)
+  +size(12)
 .about-title
   +fz-rem(30px)
   +mb-rem(25px)

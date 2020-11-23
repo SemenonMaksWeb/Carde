@@ -35,6 +35,7 @@ export default {
 
 <style lang="sass">
 .about-section-proposal
+  +mt-rem(30px)
   +py-em(50px)
   background-color: var(--text-nav-top)
   color: #fff
@@ -43,9 +44,16 @@ export default {
   +row-no-gutters()
   +justify-content-between()
   +align-items-center()
+  +flex-column()
+  +flex-lg-row()
+.about-section-proposal-content
+  +mb-rem(20px)
+  +mb-lg-rem(0px)
 .about-section-proposal-title
-  +fz-rem(48px)
-  +lh-rem(26px)
+  +fz-rem(30px)
+  +fz-lg-rem(48px)
+  +lh-lg-rem(26px)
+  +lh-rem(36px)
   font-weight: 700
   +mb-rem(15px)
 .about-section-proposal-span
