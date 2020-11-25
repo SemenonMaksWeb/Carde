@@ -22,20 +22,22 @@
         </div>
       </div>
     </div>
-    <p
-      class="blog-block-text"
-      v-if="$route.params.id === undefined"
-    >
-      {{ blog.body }}
-    </p>
-    <div v-html="blog.body" v-else></div>
-    <router-link
-      v-if="$route.params.id === undefined"
-      class="blog-block-link"
-      :to="'/blog/' + blog.id"
-    >
-      Read More
-    </router-link>
+    <template v-if="$route.params.id === undefined">
+      <p
+        class="blog-block-text"
+        v-if="$route.params.id === undefined"
+      >
+        {{ blog.body }}
+      </p>
+      <router-link
+        v-if="$route.params.id === undefined"
+        class="blog-block-link"
+        :to="'/blog/' + blog.id"
+      >
+        Read More
+      </router-link>
+    </template>
+    <div v-html="blog.content" v-else></div>
   </div>
 </template>
 

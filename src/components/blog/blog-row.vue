@@ -1,6 +1,5 @@
 <template>
   <div class="blog-row">
-    {{ blog.length }}
     <template v-if="blog.length !== undefined">
       <blog-block
         v-for="dataset in blog"

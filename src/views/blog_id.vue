@@ -36,7 +36,7 @@ export default {
           day: "22",
           month: "MAR",
           title: "There will be short heading with image",
-          body: `<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+          content: `<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
            form, by injected humour, or randomised words which don't look even slightly believable
             in some form, by injected humour, or randomised words which don't look even slightly believable There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
            form, by injected humour, or randomised words which don't look even slightly believable
