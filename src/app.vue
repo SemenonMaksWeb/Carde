@@ -20,5 +20,5 @@ export default {
 </script>
 <style lang="sass">
 .main-index
-  height: 100%
+  margin-bottom: auto
 </style>
