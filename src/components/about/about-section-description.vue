@@ -29,26 +29,15 @@
           necessary , making this the first true generator
           on the Internet.
         </base-text>
-        <div class="about-ul-block">
-          <ul class="about-ul">
-            <li
-              class="about-li"
-              v-for="dataset in link1"
-              :key="dataset.id"
-            >
-              {{ dataset.text }}
-            </li>
-          </ul>
-          <ul class="about-ul">
-            <li
-              class="about-li"
-              v-for="dataset in link2"
-              :key="dataset.id"
-            >
-              {{ dataset.text }}
-            </li>
-          </ul>
-        </div>
+        <ul class="about-ul">
+          <base-li
+            v-for="dataset in link1"
+            :key="dataset.id"
+            class="about-li"
+          >
+            {{ dataset.text }}
+          </base-li>
+        </ul>
       </div>
     </div>
   </base-container>
@@ -57,9 +46,10 @@
 <script lang="ts">
 import BaseText from "@/components/base/base-text.vue";
 import BaseContainer from "@/components/base/base-container.vue";
+import BaseLi from "@/components/base/base-li.vue";
 export default {
   name: "about-section-description",
-  components: { BaseContainer, BaseText },
+  components: { BaseLi, BaseContainer, BaseText },
   data() {
     return {
       link1: [
@@ -74,19 +64,17 @@ export default {
         {
           id: 3,
           text: "Creating new car assets and wheels"
-        }
-      ],
-      link2: [
+        },
         {
-          id: 1,
+          id: 4,
           text: "Car painting assets and service"
         },
         {
-          id: 2,
+          id: 5,
           text: "Professional car cleaning"
         },
         {
-          id: 3,
+          id: 6,
           text: "Selling car materials and stuff"
         }
       ]
@@ -120,17 +108,13 @@ export default {
   +lh-rem(25px)
 .about-base-text
   +lh-rem(25px)
-.about-ul-block
+.about-ul
+  +mt-rem(20px)
   +row-no-gutters()
-  +mt-rem(25px)
   +justify-content-between()
 .about-li
   +fz-rem(15px)
   font-weight: 600
   color: var(--header-bg)
   +mb-rem(15px)
-  &:before
-    +mr-px(15px)
-    content: "\2714"
-    color: var(--color-red)
 </style>

@@ -21,7 +21,9 @@ export default {
   height: 100%
   display: flex
   position: relative
-  +size-off(3)
+  +size-off(9)
+  +size-off-sm(6)
+  +size-off-lg(3)
   &:hover
     &:before
       display: flex

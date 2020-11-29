@@ -61,7 +61,7 @@ export default {
     +mb-rem(0px)
 
 .blog-block-img
-  height: 425px
+  max-height: 425px
   +mb-rem(30px)
 
 .blog-block-content
@@ -72,6 +72,7 @@ export default {
   +mr-rem(10px)
   +py-rem(10px)
   +px-rem(10px)
+  +mb-rem(10px)
   background-color: var(--color-red)
   font-weight: 700
   color: #fff

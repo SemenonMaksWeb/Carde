@@ -71,8 +71,11 @@ export default {
   +my-rem(30px)
   +row()
   +justify-content-center()
+  +flex-column()
+  +flex-lg-row()
 .gallery-row-img
   +row-no-gutters()
+  +justify-content-center()
   +mb-rem(20px)
 .pagination-gallery
   +justify-content-center()

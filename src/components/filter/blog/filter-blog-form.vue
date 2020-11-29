@@ -118,9 +118,11 @@ export default {
 .filter-form-blog-news
   +mb-rem(35px)
 .filter-blog-mark-blogs
-  +size-off(12)
-  +size-off-sm(9)
+  +size(12)
+  +size-sm(9)
   +d-flex()
+  +flex-column()
+  +flex-sm-row()
   +flex-wrap()
   +justify-content-between()
 </style>
