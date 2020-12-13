@@ -39,6 +39,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/service",
     name: "page-service",
     component: () => import("@/views/service.vue")
+  },
+  {
+    path: "/service/:id",
+    name: "page-service_id",
+    component: () => import("@/views/service_id.vue")
   }
 ];
 
